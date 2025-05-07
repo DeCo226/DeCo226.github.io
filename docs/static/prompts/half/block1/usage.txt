@@ -1,0 +1,3 @@
+1. Use **move close to the %s drawer handle** only to push drawers shut.
+2. (1,2), (3,4), (5,6) and (7,8) are closely related skill pairs and cannot be planned separately during task execution.
+3. **When using domain skills, do not replace any words; the descriptions of the skills must remain intact and unaltered.**

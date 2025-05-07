@@ -1,0 +1,4 @@
+1. close the %s drawer
+2. put the block in the %s drawer
+3. take the block out of the %s drawer and place the block on the drawer's surface
+4. take the strawberry jello out of the %s drawer and place the strawberry jello on the drawer's surface

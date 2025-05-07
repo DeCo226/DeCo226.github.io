@@ -1,0 +1,6 @@
+To achieve this, the arm performs two fundamental operations:
+
+1. Move from the starting position to a target position and grasp an object by closing the gripper.
+2. Move to another target position and release the object by opening the gripper.
+
+Each step involves precise movements and binary gripper state changes for effective interaction.

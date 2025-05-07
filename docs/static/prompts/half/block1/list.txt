@@ -1,0 +1,8 @@
+1. move close to the %s drawer handle
+2. push the %s drawer shut
+3. pick up the block on the drawer's surface
+4. place the block in the %s drawer
+5. pick up the block in the %s drawer
+6. place the block on the drawer's surface
+7. pick up the strawberry jello in the %s drawer
+8. place the strawberry jello on the drawer's surface

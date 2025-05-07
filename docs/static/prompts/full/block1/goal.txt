@@ -1,0 +1,1 @@
+To accomplish this, each atomic operation of the robotic arm combines grasping, manipulating the object, and releasing into a single step. The arm moves to the target, grasps the object, performs the necessary manipulation, and then releases it. This involves two gripper state changes, ensuring effective interaction throughout the process.

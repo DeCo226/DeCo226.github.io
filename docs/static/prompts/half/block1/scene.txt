@@ -1,0 +1,1 @@
+The robotic arm interacts with a cabinet containing three drawers (top, middle, bottom) and a block, which may be on the surface or inside a drawer. The arm uses a gripper with **open** and **closed** states. Tasks include moving objects, and relocating the block or the strawberry jello.
