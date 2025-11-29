@@ -399,7 +399,35 @@
         </br>
         </br>
         </br>
+      </div>
+    </div>
+  </section>
 
+  <section class="section">
+    <div class="container is-max-widescreen">
+      <div class="rows">
+        <div class="rows is-centered ">
+          <div class="row is-full-width">
+            <h2 class="title is-3">Failure Analysis</h2>
+            
+            <div style="text-align: center;">
+              <img src="static/images/faliure_cases.png" class="interpolation-image" style="width: 100%; height: auto;" />
+            </div>
+            <br>
+            
+            <div class="content has-text-justified">
+              <p>
+                The ability of the base multi-task IL model to learn atomic skills is crucial for DeCo's generalization performance in long-horizon tasks. However, the model's generalization capability relies not only on its learning of atomic skills but also on other factors. Visual robustness is a key factor: different models have varying levels of visual robustness when confronted with previously unseen combinations in scenarios. If the base multi-task IL model's visual capability cannot effectively handle these variations, it will directly impact DeCo's ability to generalize in multi-task IL models when handling combined long-horizon tasks. We provide visual failure cases of 3DDA+DeCo and ARP+DeCo to further illustrate this limitation. Although 3DDA+DeCo and ARP+DeCo excel in learning atomic tasks, they encounter failures when facing the compositional long-horizon tasks <i>Sweep and Drop (sweep rubbish + drop rubbish)</i> and <i>Retrieve and Sweep (broom out of cupboard + sweep rubbish)</i>. Even though DeCo can plan and schedule the corresponding atomic skills, both 3DDA and ARP struggle with visual processing in unseen combination scenarios. As a result, 3DDA+DeCo and ARP+DeCo fail to execute the atomic skills, which prevents them from completing the entire long-horizon tasks.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container is-max-widescreen">
+        <div class="row">
         <h2 class="title is-3">DeCo Performance on 9 Novel Real-world Tasks (30 variations)</h2>
         <div class="row">
           <div class="columns">
