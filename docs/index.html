@@ -9,7 +9,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>DeCo</title>
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -44,11 +43,11 @@
     src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
   <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
-	    tex2jax: {
-	        inlineMath: [['$','$'], ['\\(','\\)']],
-	        processEscapes: true
-	    }
-	});
+        tex2jax: {
+            inlineMath: [['$','$'], ['\\(','\\)']],
+            processEscapes: true
+        }
+    });
     </script>
 </head>
 
@@ -76,42 +75,9 @@
             <h1 class="title is-1 publication-title" style="font-size: 35px;">
               <span style="color: #0f71bc;">De</span><span style="color: #621acf;">Co</span>: Task <span style="color: #0f71bc;">De</span>composition and Skill <span style="color: #621acf;">Co</span>mposition for Zero-Shot Generalization in Long-Horizon 3D Manipulation
             </h1>
-            <!-- <h3 class="title is-4 conference-authors"><a target="_blank" href="https://iclr.cc/Conferences/2025">ICLR 2025</a></h3> -->
             <h3 class="title is-4 conference-authors"><a target="_blank">Anonymous Authors</a></h3>
             
-            <!-- <div class="is-size-5 publication-authors">
-              <span class="author-block">
-                <a href="https://chenyt31.github.io/">Yangtao Chen</a><sup>1†</sup>,</span>
-              <span class="author-block">
-                <a href="https://chenzixuan99.github.io/homepage/">Zixuan Chen</a><sup>1†</sup>,
-              </span>
-              <span class="author-block">
-                <a href="">Junhui Yin</a><sup>1</sup>,
-              </span>
-              <span class="author-block">
-                <a href="https://cs.nju.edu.cn/huojing/index.htm">Jing Huo</a><sup>1<img src="static/images/latter.png" style="height: 1em; vertical-align: middle;"></sup>,
-              </span>
-              <span class="author-block">
-                <a href="https://pinzhuo.github.io/">Pinzhuo Tian</a><sup>2</sup>,
-              </span>
-              <span class="author-block">
-                <a href="https://jayceeshi.github.io/">Jieqi Shi</a><sup>1</sup>
-              </span>
-              <span class="author-block"></span>
-                <a href="https://cs.nju.edu.cn/gaoyang/index.htm">Yang Gao</a><sup>1</sup>
-              </span>
-            </div> -->
-
-          <!-- <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>Nanjing University, </span>
-            <span class="author-block"><sup>2</sup>Shanghai University</span>
-          </div>
-          <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>†</sup>Equal contribution, </span>
-            <span class="author-block"><sup><img src="static/images/latter.png" style="height: 1em; vertical-align: middle;"></sup>Corresponding author</span>
-          </div> -->
-
-             <div class="column has-text-centered">
+            <div class="column has-text-centered">
               <div class="publication-links">
                 <span class="link-block">
                   <a href="#"
@@ -131,16 +97,7 @@
                     <span>Dataset</span>
                   </a>
                 </span>
-                <!-- <span class="link-block">
-                  <a href="#" 
-                     class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code (Coming soon)</span>
-                  </a>
-                </span> -->
-              </div>
+                </div>
             </div>
           </div>
         </div>
@@ -213,17 +170,13 @@
   </section>
   <h2 class="subtitle has-text-centered">
   </br>
-  <!-- DeCo: Task Decomposition and Skill Composition for Zero-Shot Generalization in Long-Horizon 3D Manipulation -->
-    <I>DeCo can <span style="font-weight: bold;">zero-shot generalize</span> to novel yet <span style="font-weight: bold;">compositional long-horizon 3D manipulation</span> tasks.</I>
-  <!-- </br> -->
-    <!-- <I>See the videos and demonstrations below for more details.</I> -->
+  <I>DeCo can <span style="font-weight: bold;">zero-shot generalize</span> to novel yet <span style="font-weight: bold;">compositional long-horizon 3D manipulation</span> tasks.</I>
   </h2>
 
 
 
   <section class="section">
     <div class="container is-max-desktop">
-      <!-- Abstract. -->
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           <h2 class="title is-3">Abstract</h2>
@@ -231,17 +184,17 @@
             <p>
                 Generalizing language-conditioned multi-task imitation learning (IL)
                 models to novel long-horizon 3D manipulation tasks remains a significant challenge. 
-		To address this, we propose <span style="font-weight: bold; ">DeCo</span> (Task <span style="font-weight: bold; ">De</span>composition and Skill
+        To address this, we propose <span style="font-weight: bold; ">DeCo</span> (Task <span style="font-weight: bold; ">De</span>composition and Skill
                  <span style="font-weight: bold; ">Co</span>mbination), a model-agnostic framework compatible
                 with various multi-task IL models, designed to enhance their zero-shot gener-
                 alization to novel, compositional, long-horizon 3D manipulation tasks. 
-		DeCo first decomposes IL demonstrations into a set of modular atomic tasks based
+        DeCo first decomposes IL demonstrations into a set of modular atomic tasks based
                 on the physical interaction between the gripper and objects, and constructs an
                 atomic training dataset that enables models to learn a diverse set of reusable
                 atomic skills during imitation learning. At inference time, DeCo leverages a
                 vision-language model (VLM) to parse high-level instructions for long-horizon
                 tasks, retrieve the relevant atomic skills, and dynamically schedule their execution; 
-		a spatially-aware skill-chaining module then ensures smooth, collision-free
+        a spatially-aware skill-chaining module then ensures smooth, collision-free
                 transitions between sequential skills. We evaluate DeCo in simulation using
                 DeCoBench, a benchmark specifically designed to assess zero-shot generalization
                 of multi-task IL models in compositional long-horizon 3D manipulation. Across three representative IL
@@ -249,20 +202,18 @@
                 of <span style="font-weight: bold; ">66.67%, 21.53%, and 57.92%</span>, respectively, on 12 novel compositional tasks.
                 Moreover, in real-world experiments, a DeCo-enhanced model trained on only 6
                 atomic tasks successfully completes 9 novel long-horizon tasks, yielding an average 
-		success rate improvement of <span style="font-weight: bold; ">53.33%</span> over the base multi-task IL model.
+        success rate improvement of <span style="font-weight: bold; ">53.33%</span> over the base multi-task IL model.
             </p>
           </div>
         </div>
       </div>
     </div>
-    <!-- Paper video. -->
-  <br>
+    <br>
   <br>
 
   <div class="container is-max-widescreen">
 
     <div class="rows" style="max-width: 1000px; margin: 0 auto;">
-      <!-- <h2 class="title is-3">Video</h2> -->
       <div class="publication-video">
         <iframe src="static/video/teaser.mp4"
                 frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -320,65 +271,7 @@
             <div style="text-align: center;">
                 <img src="static/images/method.png" class="interpolation-image" style="width: 85%; height: auto;" />
             </div>
-            <!-- <div style="text-align: center;">
-              <img src="static/images/method2.png" class="interpolation-image" style="width: 85%; height: auto;" />
             </div>
-            </br>
-            </br>
-            <p class="content has-text-justified">
-              <span style="font-weight: bold; ">(b) GravMaps Guided Action Diffusion:</span> The policy network
-              perceives the scene and denoises noisy actions guided by the GravMap token. After $K$ denoising steps, the
-              clean actions are executed by the robot.
-            </p>
-            </br>
-            </br> -->
-
-            <!-- <h2 class="title is-3">Interactive Visualization</h2>
-            <div class="row">
-
-              <div class="columns">
-                <div class="column has-text-centered">
-                  Visualize GravMaps for
-                  <div class="select is-small is-rounded">
-                    <select id="interactive-menu" onchange="updateInteractive()">
-                      <option value="close-jar-banana" selected="selected">"Close the jar closer to the banana"</option>
-                      <option value="open-drawer-small">"Open the bottom drawer"</option>
-                      <option value="meat-on-grill">"Put the chicken on the grill"</option>
-                      <option value="push-buttons-light">"Push the button with the same color as the light"</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-
-              <div class="columns has-text-centered" style="display: flex; justify-content: center;">
-                <div class="column is-half has-text-centered">
-                  <p style="text-align:center;">
-                    <video id="interactive-video" width="100%" height="100%" controls autoplay loop muted>
-                      <source src="static/valuemap/close_jar_banana.mp4" type="video/mp4">
-                    </video>
-                  </p>
-                </div>
-
-                <div class="columns has-text-centered" id="iframe-container"
-                  style="display: flex; justify-content: center;">
-                  <div class="column">
-                    <iframe id="interactive-html-1" src="./static/valuemap/close_jar_banana_map1.html" width="100%"
-                      height="300" frameborder="0"></iframe>
-                    <p style="text-align:center;">
-                      Interactive GravMap 1
-                    </p>
-                  </div>
-                  <div class="column">
-                    <iframe id="interactive-html-2" src="./static/valuemap/close_jar_banana_map2.html" width="100%"
-                      height="300" frameborder="0"></iframe>
-                    <p style="text-align:center;">
-                      Interactive GravMap 2
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div> -->
-          </div>
         </div>
   </section>
 
@@ -483,13 +376,11 @@
         </div>
         <br>
         <br>
-        <!-- <h3 id="novel-video-title" class="has-text-centered"><b>close bottom drawer.</b></h3> -->
         <br>
 
         <div class="columns is-multiline">
           <div class="column is-half has-text-centered video-container">
-            <span id="vanilla-label" class="has-text-weight-bold">rvt2</span> <!-- Updated label -->
-            <br><br>
+            <span id="vanilla-label" class="has-text-weight-bold">rvt2</span> <br><br>
             <video id="vanilla-video" muted autoplay loop>
               <source src="static/video/rvt2/put_in_without_close_variation_0.mp4" type="video/mp4">
               Your browser does not support the video tag.
@@ -497,8 +388,7 @@
           </div>
 
           <div class="column is-half has-text-centered video-container">
-            <span id="deco-label" class="has-text-weight-bold">rvt2 + DeCo</span> <!-- Updated label -->
-            <br><br>
+            <span id="deco-label" class="has-text-weight-bold">rvt2 + DeCo</span> <br><br>
             <video id="deco-video" muted autoplay loop>
               <source src="static/video/deco_rvt2/put_in_without_close_variation_0.mp4" type="video/mp4">
               Your browser does not support the video tag.
@@ -529,7 +419,6 @@
                 </select>
               </div>
 
-              <!-- Additional select element for episode -->
               <span>
                 variation
                 <div class="select is-small" style="display:inline-block; vertical-align:middle;">
@@ -580,15 +469,53 @@
           </div>
           <br>
           <h3 id="video-title" class="has-text-centered"><b>put the yellow block in the bottom drawer. (success)</b></h3>
-          <!-- Title for the video -->
-        </div>
+          </div>
       </div>
     </div>
   </section>
 
-  
-
-
+  <section class="section">
+    <div class="container is-max-widescreen">
+      <div class="row">
+        <h2 class="title is-3">Real-world Task Execution Monitoring under Manually Induced Perturbations</h2>
+        <br>
+        <div class="columns is-centered">
+          <div class="column">
+            <h4 class="title is-5 has-text-centered">In Fail</h4>
+            <div class="content has-text-centered">
+              <video poster="" autoplay muted loop height="100%" width="100%">
+                <source src="static/video/real/in_fail.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+          <div class="column">
+            <h4 class="title is-5 has-text-centered">In Success</h4>
+            <div class="content has-text-centered">
+              <video poster="" autoplay muted loop height="100%" width="100%">
+                <source src="static/video/real/in_success.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+          <div class="column">
+            <h4 class="title is-5 has-text-centered">Out Fail</h4>
+            <div class="content has-text-centered">
+              <video poster="" autoplay muted loop height="100%" width="100%">
+                <source src="static/video/real/out_fail.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+          <div class="column">
+            <h4 class="title is-5 has-text-centered">Out Success</h4>
+            <div class="content has-text-centered">
+              <video poster="" autoplay muted loop height="100%" width="100%">
+                <source src="static/video/real/out_success.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <section class="section">
     <div class="container is-max-widescreen">
       <div class="row">
@@ -604,27 +531,11 @@
     </div>
   </section>
 
-  <!-- <section class="section" id="BibTeX">
-  <div class="container is-max-widescreen content">
-    <div class="row">
-    <h2 class="title">BibTeX</h2>
-    <pre><code>@article{chen2024gravmad,
-      title={GravMAD: Grounded Spatial Value Maps Guided Action Diffusion for Generalized 3D Manipulation},
-      author={Chen, Yangtao and Chen, Zixuan and Yin, Junhui and Huo, Jing and Tian, Pinzhuo and Shi, Jieqi and Gao, Yang},
-      journal={arXiv preprint arXiv:2409.20154},
-      year={2024}
-    }</code></pre>
-  </div>
-  </div>
-</section> -->
-
-
   <footer class="footer">
     <div class="container">
       <div class="columns is-centered">
         <div class="column is-8">
           <div class="content has-text-centered">
-            <!-- 添加 has-text-centered -->
             <p>
               Website template borrowed from <a rel="license"
                 href="https://github.com/nerfies/nerfies.github.io">NeRFies </a>
